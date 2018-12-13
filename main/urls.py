@@ -36,7 +36,7 @@ urlpatterns = [
       path('help/',help),
       path('warn/',warn),
       path('seven/',seven),
-      path('/',newsfeed),
+      path('',newsfeed),
       path('feed/<pk>/',detail_feed),
       path('feed/<pk>/edit/',edit_feed),
       path('feed/<pk>/remove/',remove_feed),
