@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+<style>
+    *{
+    width:500px;
+    padding-top:5px;
+    margin:2px;
+    }
+
+
+
+    .feed{
+         border:1px solid black;
+         margin-bottom:10px;
+     }
+</style>
+  <div class="container">
+      {% for feed in articles %}
+      <div class="feed">
+          <span class="name">{{feed.name}}</span>
+          <span class="master">-{{feed.master}}</span>
+          <span class="category">({{feed.category}})</span>
+          <p class="text">{{feed.text}}</p>
+          <div class="date">-{{feed.created_at}}</div>
+
+      </div>
+      {% endfor %}
+  </div>
+</body>
+</html>
